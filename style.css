@@ -1,0 +1,318 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-light-grayish-violet: hsl(270, 3%, 87%);
+  --clr-dark-grayish-violet: hsl(279, 6%, 55%);
+  --clr-very-dark-violet: hsl(278, 68%, 11%);
+  --clr-grey: #ccc;
+  /* Errors */
+  --clr-input-errors: hsl(0, 100%, 66%);
+  /* Buttons */
+  --clr-button: #000;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.5;
+  font-size: 18px;
+  font-family: "Space Grotesk", sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+img {
+  width: 100%;
+}
+div {
+  font-size: 12px;
+}
+
+#main-sec {
+  display: flex;
+  align-items: center;
+}
+.first-section {
+  width: 30%;
+  background-image: url(./images/bg-main-desktop.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.first-section .images .first-img {
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 300px;
+  height: 160px;
+  border-radius: 4px;
+  background: url(https://static.vecteezy.com/system/resources/thumbnails/002/092/943/small/abstract-mixed-pastel-colors-background-free-vector.jpg);
+}
+.first-section .images .first-img .blank-img {
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 45px;
+}
+.first-section .images .first-img h5 {
+  text-align: center;
+  color: var(--clr-white);
+}
+.first-section .images .first-img h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--clr-white);
+}
+.first-section .images .first-img p {
+  text-align: right;
+  color: var(--clr-white);
+}
+.first-section .images .first-img .name-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.first-section .images .second-img {
+  background: rgb(241, 239, 239);
+  width: 300px;
+  height: 160px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+.first-section .images .second-img p {
+  background: #333;
+  margin: 20px 40px;
+  padding: 3px;
+  color: var(--clr-white);
+  border-radius: 3px;
+  text-align: right;
+}
+.first-section .images .second-img .black {
+  background-color: #000;
+  height: 30px;
+  margin-top: 15px;
+}
+.second-section {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.second-section form {
+  width: 45%;
+}
+.second-section label,
+.second-section input,
+.second-section button {
+  width: 100%;
+}
+.second-section label {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.second-section input {
+  padding: 7px;
+  /* margin-bottom: 10px; */
+  border: 1px solid var(--clr-grey);
+  border-radius: 4px;
+  outline: none;
+}
+.second-section form .input-flex {
+  display: flex;
+  width: 100%;
+}
+.second-section form .input-flex div {
+  width: 100%;
+  margin-right: 5px;
+}
+.btn {
+  padding: 10px;
+  background: var(--clr-button);
+  color: var(--clr-white);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 50%;
+}
+.error {
+  background: red;
+  color: white;
+}
+
+/* second section */
+
+#thank-you {
+  display: flex;
+}
+.thank-you-first-section {
+  width: 30%;
+  background-image: url(./images/bg-main-desktop.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.thank-you-second-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.thank-you-second-section i {
+  background: url(https://static.vecteezy.com/system/resources/thumbnails/002/092/943/small/abstract-mixed-pastel-colors-background-free-vector.jpg);
+  border-radius: 50%;
+  padding: 14px;
+  margin-bottom: 15px;
+}
+.thank-you-first-section .first-img {
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  width: 300px;
+  height: 160px;
+  border-radius: 4px;
+  background: url(https://static.vecteezy.com/system/resources/thumbnails/002/092/943/small/abstract-mixed-pastel-colors-background-free-vector.jpg);
+}
+.thank-you-first-section .images .first-img .blank-img {
+  background-color: var(--clr-white);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 45px;
+}
+.thank-you-first-section .images .first-img h5 {
+  text-align: center;
+  color: var(--clr-white);
+}
+.thank-you-first-section .images .first-img h3 {
+  text-align: center;
+  letter-spacing: 3px;
+  color: var(--clr-white);
+}
+.thank-you-first-section .images .first-img p {
+  text-align: right;
+  color: var(--clr-white);
+}
+.thank-you-first-section .images .first-img .name-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thank-you-first-section .images .second-img {
+  background: rgb(241, 239, 239);
+  width: 300px;
+  height: 160px;
+  border-radius: 4px;
+  position: absolute;
+  top: 250px;
+  left: 200px;
+}
+.thank-you-first-section .images .second-img p {
+  background: #333;
+  margin: 20px 40px;
+  padding: 3px;
+  color: var(--clr-white);
+  border-radius: 3px;
+  text-align: right;
+}
+.thank-you-first-section .images .second-img .black {
+  background-color: #000;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 600px) {
+  #main-sec {
+    flex-direction: column;
+    height: 90vh;
+  }
+  #main-sec .first-section {
+    width: 100%;
+    height: 30%;
+  }
+  #main-sec .second-section {
+    width: 100%;
+    height: 70%;
+  }
+  #main-sec .first-section .images .first-img {
+    padding: 10px;
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    width: 300px;
+    height: 160px;
+    z-index: 1;
+  }
+  #main-sec .first-section .images .second-img {
+    background: rgb(241, 239, 239);
+    width: 300px;
+    height: 160px;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+  }
+  #main-sec .second-section form {
+    padding: 20px;
+    width: 100%;
+  }
+}
